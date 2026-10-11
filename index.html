@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Artistik Canvas — tasarım adayları</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f7f7f4;
+        --fg: #1a1a18;
+        --muted: #5f5f5a;
+        --line: #d9d9d3;
+        --card: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #151513;
+          --fg: #ecebe6;
+          --muted: #a6a59e;
+          --line: #333331;
+          --card: #1f1f1c;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 16px 64px;
+      }
+      h1 {
+        font-size: clamp(1.8rem, 5vw, 2.6rem);
+        line-height: 1.1;
+        margin: 0 0 12px;
+        letter-spacing: -0.01em;
+      }
+      .lead {
+        color: var(--muted);
+        margin: 0 0 32px;
+        max-width: 60ch;
+      }
+      ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 12px;
+      }
+      li {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 18px 18px 14px;
+      }
+      .n {
+        display: inline-block;
+        min-width: 2ch;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+      h2 {
+        display: inline;
+        font-size: 1.25rem;
+        margin: 0;
+      }
+      li p {
+        margin: 6px 0 12px;
+        color: var(--muted);
+      }
+      nav a {
+        display: inline-block;
+        padding: 9px 14px;
+        margin: 0 8px 8px 0;
+        border: 1px solid var(--fg);
+        border-radius: 999px;
+        color: var(--fg);
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+      nav a:first-child {
+        background: var(--fg);
+        color: var(--bg);
+      }
+      .note {
+        margin-top: 32px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Artistik Canvas için <span id="count">6</span> tasarım adayı</h1>
+      <p class="lead">Hepsi aynı yazılarla hazırlandı; yalnızca görünüş farklı. Her birinde ana sayfaya, bir bölüme ve bir yazıya bakın. Açık/koyu tema düğmesi her tasarımın başlığında. Beğendiğinizi ve beğenmediğinizi söyleyin.</p>
+      <ol id="list"><li><span class="n">1.</span> <h2>Mevcut</h2><p>Türk modernist afiş: renkli kağıt kolajı, düz renk bantları.</p><nav><a href="stil0/index.html">Ana sayfa</a><a href="stil0/resim.html">Resim bölümü</a><a href="stil0/resim/isik-istanbul-ve-resmin-sessizligi.html">Bir yazı</a></nav></li><li><span class="n">2.</span> <h2>Dergi</h2><p>Hafta sonu kültür eki: sütunlar, ince çizgiler, kalın serif başlıklar.</p><nav><a href="stil1/index.html">Ana sayfa</a><a href="stil1/resim.html">Resim bölümü</a><a href="stil1/resim/isik-istanbul-ve-resmin-sessizligi.html">Bir yazı</a></nav></li><li><span class="n">3.</span> <h2>Galeri</h2><p>Beyaz küp müze: bol boşluk, büyük görseller, küçük etiketler.</p><nav><a href="stil2/index.html">Ana sayfa</a><a href="stil2/resim.html">Resim bölümü</a><a href="stil2/resim/isik-istanbul-ve-resmin-sessizligi.html">Bir yazı</a></nav></li><li><span class="n">4.</span> <h2>Afiş</h2><p>Avangart afiş: dev harfler, çarpık yerleşim, ham renkler.</p><nav><a href="stil3/index.html">Ana sayfa</a><a href="stil3/resim.html">Resim bölümü</a><a href="stil3/resim/isik-istanbul-ve-resmin-sessizligi.html">Bir yazı</a></nav></li><li><span class="n">5.</span> <h2>Sinematik</h2><p>Karanlık salon: geniş ekran, film greni, ışık ve gölge.</p><nav><a href="stil4/index.html">Ana sayfa</a><a href="stil4/resim.html">Resim bölümü</a><a href="stil4/resim/isik-istanbul-ve-resmin-sessizligi.html">Bir yazı</a></nav></li><li><span class="n">6.</span> <h2>Defter</h2><p>Arkadaş defteri: kağıt dokusu, el yazısı notlar, sıcak ve samimi.</p><nav><a href="stil5/index.html">Ana sayfa</a><a href="stil5/resim.html">Resim bölümü</a><a href="stil5/resim/isik-istanbul-ve-resmin-sessizligi.html">Bir yazı</a></nav></li></ol>
+      <p class="note">Bu bir ön izleme: arama, iletişim formu ve okunma sayacı burada çalışmaz. Sağ alttaki "Tasarım" düğmesiyle aynı sayfayı başka tasarımda açabilirsiniz.</p>
+    </main>
+  </body>
+</html>
